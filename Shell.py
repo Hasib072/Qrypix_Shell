@@ -113,8 +113,8 @@ def main():
     # Menu items
     
     # Set the console window size as soon as the program starts
-    # if os.name == 'nt':  # Only attempt to set console size on Windows
-    #     set_console_window_size(80, 25)  # Adjust these values as needed
+    if os.name == 'nt':  # Only attempt to set console size on Windows
+        set_console_window_size(80, 25)  # Adjust these values as needed
         
 
     menu_items = ["1. Encrypt File", "2. Decrypt File", "3. How to Use", "4. About Us", "5. Exit"]
